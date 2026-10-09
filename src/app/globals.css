@@ -313,6 +313,9 @@ footer { padding: 45px 0 28px; color: #f6f0e7; background: var(--ink); }
 }
 
 .siteNav { position: relative; z-index: 20; }
+.menuOpen .siteNav { z-index:100; border-color:transparent; pointer-events:none; }
+.menuOpen .siteNav .brand,.menuOpen .siteNav .navCta { visibility:hidden; }
+.menuOpen .siteNav .menuButton { pointer-events:auto; color:#fffaf2; border-color:rgba(255,255,255,.72); }
 .navDark { color: var(--ink); border-color: rgba(38,51,75,.2); }
 .navDark .navCta { border-color: rgba(38,51,75,.45); }
 .pageTransition { animation: pageIn .7s cubic-bezier(.2,.72,.2,1) both; }
