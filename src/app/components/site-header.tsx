@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { channel, telegram } from "../content";
 
@@ -32,7 +33,7 @@ export function SiteHeader({ tone = "light" }: SiteHeaderProps) {
   return (
     <>
       <nav className={`nav shell siteNav ${tone === "dark" ? "navDark" : ""}`} aria-label="Основная навигация">
-        <Link className="brand" href="/">aurora’s room <span>☾</span></Link>
+        <Link className="brand" href="/"><Image className="brandMascot" src="/aurora-cat.svg" alt="" width={40} height={40} />aurora’s room <span>☾</span></Link>
         <div className="navActions">
           <a className="navCta" href={telegram} target="_blank" rel="noreferrer">написать ↗</a>
           <button
@@ -53,7 +54,7 @@ export function SiteHeader({ tone = "light" }: SiteHeaderProps) {
         <div className="menuSky" aria-hidden="true"><i /><i /><i /><i /><i /></div>
         <div className="menuMoon" aria-hidden="true">☾</div>
         <div className="menuConstellation" aria-hidden="true">✦　·　✧<br />　☼　·　✦</div>
-        <div className="menuCat menuCatOne" aria-hidden="true">🐈‍⬛<small>я тоже<br />выбираю путь</small></div>
+        <div className="menuCat menuCatOne" aria-hidden="true"><Image src="/aurora-cat.png" alt="" width={70} height={70} /><small>я тоже<br />выбираю путь</small></div>
         <div className="menuCat menuCatTwo" aria-hidden="true">🐈<small>куда<br />сегодня?</small></div>
 
         <div className="shell menuPanel">
