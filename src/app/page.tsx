@@ -48,7 +48,7 @@ export default function Home() {
               <Image src={auroraImage} alt="Аврора — таролог и автор aurora’s room" fill priority sizes="(max-width: 800px) 78vw, 390px" />
             </div>
             <div className="sticker stickerTop">guided by<br />the universe ✦</div>
-            <div className="sticker stickerCat" aria-hidden="true"><span>☁</span> 🐈‍⬛</div>
+            <div className="sticker stickerCat mascotSticker"><Image src="/aurora-cat.png" alt="Лунный кот — маленький проводник Aurora" width={112} height={112} /><small>мяу, ты на своём пути</small></div>
             <div className="sticker stickerNote">со мной<br /><b>по любви</b> ♡</div>
           </div>
         </div>

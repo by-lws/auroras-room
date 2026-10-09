@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     siteName: "Aurora’s room",
     title: "Aurora’s room — Таро, ритуалы и возвращение к себе",
     description: "Пространство Авроры о Таро, ритуалах, путешествиях и возвращении к себе.",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Aurora’s room — Таро, ритуалы и возвращение к себе" }],
+    images: [{ url: "/aurora-preview.png", width: 1200, height: 630, alt: "Лунный кот Aurora — Таро, ритуалы и возвращение к себе" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aurora’s room",
     description: "Таро, ритуалы и возвращение к себе",
-    images: ["/og.png"],
+    images: ["/aurora-preview.png"],
   },
 };
 
